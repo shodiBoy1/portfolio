@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="" class="logo"><span>Muhtasham</span></a>
+        <a href="" class="logo"><span>SBRVSH.</span></a>
 
         <ul class="nav-links">
             <li>
@@ -32,18 +32,19 @@
         </ul>
             <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-            <button class="visit-btn">Visit Github</button>
+            <button class="visit-btn" onclick="window.location.href='https://github.com/shodiBoy1';">Visit Github</button>
+
     </header>
 
 
     <section id="about" class="about">
         <div class="about-container">
-            <img src="image.jpg" alt="">
+            <img src="assets/img/profile-pic.png" alt="">
             <div class="info-box">
                 <div class="text">
                     <h3>Hi, I'm</h3>
-                    <h1>Muhtasham</h1>
-                    <span>ML Engineer</span>
+                    <h1>Shodee</h1>
+                    <span>Software Developer</span>
                 </div>
 
                 <div class="btn-group">
@@ -51,8 +52,12 @@
                     <div class="btn">Contact</div>
                 </div>
                 <div class="socials">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://github.com/shodiBoy1" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sobirovsh/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -60,77 +65,97 @@
 
     <section id="experience" class="experience">
         <h2 class="section-title">Experience</h2>
-
+    
         <div class="experience-info">
             <div class="grid">
+    
                 <div class="grid-card">
                     <i class="fa-solid fa-code"></i>
-                    <span>ML Engineering</span>
-                    <h3>5 Years</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ut! </p>
+                    <span>Software Developer</span>
+                    <h3>2+ Years</h3>
+                    <p>Developing and enhancing features for the TUM Management Portal "Koinon" using PHP, Docker, MySQL, and MVC frameworks. Focused on feature development, testing, and system optimization.</p>
                 </div>
-
+    
                 <div class="grid-card">
-                    <i class="fa-solid fa-file-code"></i>
-                    <span>Graphic Design</span>
-                    <h3>5 Years</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ut! </p>
+                    <i class="fa-solid fa-tasks"></i>
+                    <span>Project Manager</span>
+                    <h3>1 Year</h3>
+                    <p>Led a team of three developers to create an internship management system, enabling students to apply for internships, manage documents, and track approvals. Built tools for school offices to streamline application reviews and decision-making.</p>
                 </div>
-
+    
+                <div class="grid-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Thesis & Project Management</span>
+                    <h3>1 Year</h3>
+                    <p>Developed a platform for students to manage thesis and project applications online, providing tools for both students and university offices to streamline processes.</p>
+                </div>
+    
+                <div class="grid-card">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Founder, WebWrites</span>
+                    <h3>Ongoing</h3>
+                    <p>Building a SaaS platform for writers to share and sell articles, books, poems, and scripts globally, fostering a creative community.</p>
+                </div>
+    
                 <div class="grid-card">
                     <i class="fa-solid fa-laptop"></i>
-                    <span>System Design</span>
-                    <h3>5 Years</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ut! </p>
+                    <span>Web Development</span>
+                    <h3>2+ Years</h3>
+                    <p>Creating websites using HTML, CSS, and JavaScript, focusing on responsive designs and usability. Continuously learning new technologies to enhance my skills.</p>
                 </div>
-
+    
                 <div class="grid-card">
-                    <i class="fa-solid fa-list"></i>
-                    <span>Content Manager</span>
-                    <h3>5 Years</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ut! </p>
-                </div>  
+                    <i class="fa-solid fa-blog"></i>
+                    <span>Tech Blogger</span>
+                    <h3>Ongoing</h3>
+                    <p>Sharing insights on my journey as a computer science student and writing about interesting tech topics on my personal blog.</p>
+                </div>
+    
             </div>
-
-            <img src="image.jpg" alt="">
+    
+            <img src="assets/img/profile-pic.png" alt="Profile Picture">
         </div>
     </section>
+    
 
     <section id="projects" class="projects">
         <h2 class="section-title">Recent Projects</h2>
-
+    
         <div class="projects-grid">
+    
             <div class="project-card">
-                <img src="project-1.png" alt="">
-                <h3>Project X</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, nostrum?</p>
+                <img src="assets/img/portfolio-1.png" alt="Shodee Blog">
+                <h3>Shodee Blog</h3>
+                <p>A personal blog where I share insights from my journey as a computer science student and discuss interesting topics in technology and life.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
+                    <a class="btn" href="https://www.shodeeblog.com/" target="_blank">Live Demo</a>
+                    <a class="btn" href="https://github.com/shodiBoy1/PersonalPortfolio" target="_blank">Github Repo</a>
                 </div>
             </div>
-
+    
             <div class="project-card">
-                <img src="project-2.png" alt="">
-                <h3>Project Y</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, nostrum?</p>
+                <img src="assets/img/portfolio-4.png" alt="Deep Clean Steamers">
+                <h3>Deep Clean Steamers</h3>
+                <p>A professional website built for a client in New York, showcasing their small business specializing in steam cleaning services. Focused on clean design and user experience.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
+                    <a class="btn" href="https://www.deepcleansteamers.com/" target="_blank">Live Demo</a>
+                    <a class="btn" href="#" target="_blank">Github Repo</a>
                 </div>
             </div>
-
+    
             <div class="project-card">
-                <img src="project-3.png" alt="">
-                <h3>Project Z</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, nostrum?</p>
+                <img src="assets/img/portfolio-2.png" alt="WebWrites">
+                <h3>WebWrites</h3>
+                <p>Currently developing a SaaS platform for writers worldwide to share and sell their articles, books, poems, and scripts. Designed to foster creativity and collaboration.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
+                    <a class="btn" href="https://www.webwrites.com/" target="_blank">Live Demo</a>
+                    <a class="btn" href="#" target="_blank">Github Repo</a>
                 </div>
             </div>
+    
         </div>
     </section>
+    
 
     <section id="contact" class="contact">
         <div class="input-box">
@@ -164,10 +189,10 @@
             </li>
         </ul>
 
-        <p class="copyright">All Rights Reserved | Muhtasham </p>
+        <p class="copyright">All Rights Reserved | SBRVSH. </p>
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
